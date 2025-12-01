@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  labels:
+    argocd-team: a
+  annotations:
+    link.argocd.argoproj.io/external-link: http://my-grafana.example.com/pre-generated-link
+  name: test
+spec:
+  destination:
+    namespace: nginx1
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    chart: nginx
+    repoURL: https://charts.bitnami.com/bitnami
+    targetRevision: 22.3.3
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true

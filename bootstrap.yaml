@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  labels:
+    argocd-team: d
+  annotations:
+    link.argocd.argoproj.io/external-link: http://my-grafana.example.com/pre-generated-link
+  name: bootstrap
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    repoURL: https://github.com/aveuiller/argocd-tests.git
+    ref: master
+    path: /applications
+    recurseDirectory: true

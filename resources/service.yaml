@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Service
+metadata:
+  labels:
+    argocd-team: a
+  annotations:
+    link.argocd.argoproj.io/external-link: http://my-grafana.example.com/pre-generated-link
+  name: test-svc
+spec:
+  selector:
+    app.kubernetes.io/name: MyApp
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 9376
