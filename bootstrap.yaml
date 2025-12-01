@@ -14,6 +14,6 @@ spec:
   source:
     repoURL: https://github.com/aveuiller/argocd-tests.git
     targetRevision: main
-    path: /applications
+    path: applications
     directory:
       recurse: true

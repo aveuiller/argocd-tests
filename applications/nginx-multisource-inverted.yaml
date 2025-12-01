@@ -15,7 +15,7 @@ spec:
     targetRevision: 22.3.3
   - repoURL: https://github.com/aveuiller/argocd-tests.git
     targetRevision: main
-    path: /resources
+    path: resources
     directory:
       recurse: true
   syncPolicy:

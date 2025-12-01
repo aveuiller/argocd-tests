@@ -12,7 +12,7 @@ spec:
   sources:
   - repoURL: https://github.com/aveuiller/argocd-tests.git
     targetRevision: main
-    path: /resources
+    path: resources
     directory:
       recurse: true
   - chart: nginx
