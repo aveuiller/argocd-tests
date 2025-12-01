@@ -11,7 +11,7 @@ spec:
   project: default
   sources:
   - repoURL: https://github.com/aveuiller/argocd-tests.git
-    ref: master
+    ref: main
     path: /resources
   - chart: nginx
     repoURL: https://charts.bitnami.com/bitnami

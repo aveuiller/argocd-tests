@@ -13,6 +13,6 @@ spec:
   project: default
   source:
     repoURL: https://github.com/aveuiller/argocd-tests.git
-    ref: master
+    ref: main
     path: /applications
     recurseDirectory: true
