@@ -14,8 +14,10 @@ spec:
     repoURL: https://charts.bitnami.com/bitnami
     targetRevision: 22.3.3
   - repoURL: https://github.com/aveuiller/argocd-tests.git
-    ref: main
+    targetRevision: main
     path: /resources
+    directory:
+      recurse: true
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
