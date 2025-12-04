@@ -4,7 +4,7 @@ metadata:
   labels:
     argocd-team: d
   annotations:
-    link.argocd.argoproj.io/external-link: http://my-grafana.example.com/pre-generated-link
+    link.argocd.argoproj.io/external-link: http://my-grafana.example.com/pre-generated-link2
   name: bootstrap
 spec:
   destination:
