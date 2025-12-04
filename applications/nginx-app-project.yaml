@@ -2,6 +2,8 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: nginx-custom-project
+  annotations:
+    link.argocd.argoproj.io/external-link: http://any-website-from-nginx-custom-project/
 spec:
   project: custom-project
   destination:
